@@ -3,7 +3,10 @@ import threading
 
 import websockets
 
+from src.server.client_manager import ClientManager
 from src.server.connection import handle_connection
+
+client_manager = ClientManager()
 
 
 def run_server_thread(host="localhost", port=8765):
